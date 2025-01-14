@@ -1,0 +1,76 @@
+canvas {
+    background-image: url('./background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5vh auto;
+    display: block;
+    width: 90vw;
+    height: 50vh;
+}
+
+body {
+    background: linear-gradient(rgb(48, 35, 167), rgb(184, 128, 83), rgb(136, 31, 168), black);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accueil {
+    background: linear-gradient(rgb(48, 35, 167), rgb(184, 128, 83), rgb(136, 31, 168), black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 2rem;
+}
+
+section {
+    background: #fff;
+    opacity: 0.9;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 90%;
+    width: 20rem;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    canvas {
+        width: 80vw;
+        height: 45vh;
+    }
+
+    section {
+        width: 80%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    canvas {
+        width: 100%;
+        height: 40vh;
+    }
+
+    section {
+        width: 95%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    canvas {
+        width: 100%;
+        height: 35vh;
+    }
+
+    section {
+        width: 90%;
+        padding: 0.5rem;
+    }
+}
